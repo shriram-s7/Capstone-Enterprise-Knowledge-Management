@@ -36,3 +36,7 @@ venv/
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# local documents and media (moved here during consolidation; not published)
+docs/_local/
+media/
