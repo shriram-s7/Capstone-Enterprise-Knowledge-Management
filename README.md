@@ -22,7 +22,7 @@ The app is a **React + TypeScript** front end with a **FastAPI** back end. Retri
 
 ```mermaid
 flowchart LR
-  U[Browser: React + Vite] -->|login, JWT-style session| A[FastAPI: auth, users, hierarchy]
+  U[Browser: React + Vite] -->|login, opaque session token (hashed in DB)| A[FastAPI: auth, users, hierarchy]
   U --> K[/api/knowledge/ask: local retrieval/]
   U --> P[/api/privacy/sanitize: PII masking/]
   U --> C[/api/policies, /api/conflicts: conflict analysis/]
